@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 50x;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(18, 18, 189);
+}
+
+.navbar-brand {
+    width: 50px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: relative;
+}
+
+.navbar-brand::before {
+    content: "BMP";
+    color: rgb(18, 18, 189);
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    font-family: "DM Serif Display", serif;
+}
+
+.nav-link,
+.dropdown-item {
+    font-family: "urbanist", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border-bottom: 3px solid transparent;
+    transition: 3s ease;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    border-bottom: 3px solid black;
+    color: rgb(18, 18, 189);
+}
+
+.active {
+    border-bottom: 3px solid rgb(18, 18, 189);
+    transition: 3s ease;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/*video background */
+/* .video-container{
+    position: relative;
+    height: 100vh;
+}
+.video{
+    position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.video video{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+.overlay{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+} */
+.carousel-item img {
+    min-width: 100vw !important;
+    height: 600px !important;
+}
+
+.carousel-inner>.carousel-item {
+    position: relative;
+}
+
+.display-1 {
+    font-family: "DM Serif Display", serif;
+    /* margin-top: 7.5rem; */
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.head-text {
+    font-family: "Urbanist", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+@media only screen and (max-width: 450px) {
+    .btn-sm {
+        display: none;
+    }
+
+    .display-1 {
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 775px) {
+
+    .sub-heading {
+        font-size: 20px;
+    }
+
+    .head-text {
+        font-size: 16px;
+    }
+
+    .ceoimg {
+        margin-top: 0 !important;
+    }
+
+    .top-space {
+        margin-top: 0px !important;
+    }
+}
+
+/* introduction section */
+.top-space {
+    margin-top: 70px !important;
+}
+
+.ceoimg {
+    margin-top: 0px;
+}
+
+.display-2,
+.display-3 {
+    font-family: "DM Serif Display", serif;
+}
+
+.display-2 {
+    color: rgb(18, 18, 189);
+}
+
+.lead {
+    font-family: "Urbanist", serif;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1.5em;
+}
+
+/* businesses section */
+
+.title {
+    position: relative;
+    color: #636466;
+}
+
+h1 {
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: rgb(18, 18, 189);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+span {
+    background-color: #fff;
+}
+
+i {
+    font-size: 30px;
+    color: rgb(18, 18, 189);
+}
+
+.businessRow {
+    margin-top: 30px;
+    margin-right: -7px;
+    margin-left: -7px;
+}
+
+.businessItem {
+    padding: 7px 7px;
+}
+
+.businessItem .bBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.businessItem .bBox img {
+    width: 100%;
+    height: 230px;
+}
+
+.businessItem .bBox .bHover {
+    position: absolute;
+    bottom: calc(-100% - 20px);
+    background-color: rgba(75, 0, 7, 0.4);
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 22px;
+    height: 100%;
+    border-top: 1px solid rgba(244, 28, 47, 0.5);
+    -webkit-transition: bottom .2s linear;
+    -o-transition: bottom .2s linear;
+    transition: .2s linear ease-in-out;
+}
+
+.businessItem .bBox:hover .bHover {
+    bottom: -50%;
+}
+
+.businessSec {
+    margin-bottom: 30px;
+}
+
+/* our values Section */
+.ourCoreValues {
+    background: url(asset/values/ourCoreValue_CSR_bg.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 0 0 30px;
+    border-top: 4px solid rgb(18, 18, 189);
+    border-bottom: 4px solid rgb(18, 18, 189);
+    overflow: hidden;
+}
+
+.value-container {
+    margin-bottom: 20px;
+}
+
+/* our Partners */
+.handshake-icon {
+    background: url(asset/partners/handshake-icon.png) no-repeat;
+    background-size: 100% auto;
+    width: 40px;
+    height: 42px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.partner {
+    font-family: "DM Serif Display", serif;
+}
+
+.blue {
+    color: rgb(18, 18, 189);
+}
+
+/* featured projects */
+.sub-heading {
+    line-height: 0 !important;
+}
+
+.plate {
+    /* color: blue; */
+    background: rgb(18, 18, 189);
+    padding: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.plate:hover {
+    border: 2px solid #000000;
+}
+
+/* WHAT CAN WE OFFER
+.wt-can-we-offer {
+    text-align: center;
+    margin-top: 10%;
+
+} */
+
+
+.card-img-top {
+    /* margin-left: 10px; */
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+/* CARDS-WORK */
+.card {
+    /* margin: 5px; */
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    background-color: rgb(142, 199, 247);
+
+    transition: 0.2s ease-in-out;
+    color: white !important;
+}
+
+
+.card-body {
+    /* width: 20rem;
+    height: 15rem;
+    position: absolute;
+    line-height: 26px;
+    bottom: 30px !important; */
+    padding: 25px;
+    margin-top: -15px;
+}
+
+.card-title {
+    font-weight: 400;
+    font-family: "DM Serif Display", sans-serif;
+    /* margin-bottom: 15px;
+    margin-top: -20px; */
+}
+
+.card-body>p.card-text {
+
+    font-family: "urbanist" sans-serif;
+    font-size: 18px;
+}
+
+/* about page */
+
+.top-space {
+    margin-top: 70px !important;
+}
+
+.seprator_top,
+.separator_bottom {
+    background: url(asset/about/seprator_top.jpg) top center no-repeat;
+    height: 13px;
+    width: 100%;
+    background-size: contain;
+    display: block;
+    /* margin: 60px 0 30px; */
+}
+
+.text-justify {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.vision {
+    color: #636466;
+    font-size: 18px;
+}
+
+.vision h1 {
+    margin-bottom: 30px;
+}
+
+.title {
+    position: relative;
+    color: #636466;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.title span {
+    background-color: #fff;
+    padding: 0 20px;
+    position: relative;
+}
+
+@media only screen and (min-width: 767px) {
+    .col-md-offset-1 {
+        margin-left: 8%;
+    }
+
+    .col-md-offset-2 {
+        margin-left: 16%;
+    }
+
+}
+
+/* footer section */
+#footer {
+    height: 100% !important;
+    width: 98vw;
+    background: black;
+    margin-left: 10px;
+    background-size: cover !important;
+}
+
+.bgcl {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.second-div {
+    padding: 10px;
+    line-height: 23px;
+}
+
+.display-5 {
+    font-family: "Playfair Display", serif;
+    color: rgb(18, 18, 189);
+    font-weight: 400;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.first-div .fh {
+    text-shadow: 2px 2px 6px gray;
+}
+
+#footer1 {
+    background-color: rgb(18, 18, 189);
+    height: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+    #footer1 {
+        text-align: center;
+        font-size: 13px !important;
+    }
+
+    #footer {
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 418px) {
+    #footer1 {
+        height: 80px;
+    }
+
+}
