@@ -298,17 +298,21 @@ i {
 }
 
 .plate {
-    /* color: blue; */
-    background: rgb(18, 18, 189);
-    padding: 4px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
-}
-
-.plate:hover {
-    border: 2px solid #000000;
-}
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 5px;
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures full height consistency */
+  }
+  
+  .plate img {
+    object-fit: cover; /* Crop image while maintaining aspect ratio */
+    width: 100%; /* Ensures the image fills the container */
+    height: 100%; /* Makes height consistent */
+    border-radius: 8px;
+  }
 
 /* WHAT CAN WE OFFER
 .wt-can-we-offer {
